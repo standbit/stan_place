@@ -1,6 +1,11 @@
-x = int(input('Vvod chisla: '))
+def f(x):
+    if x <= -2:
+        return 1 - (x + 2)**2
+    elif x > 2:
+        return (x - 2)**2 + 1
+    else:
+        return -x/2
 
-def new_square(x):
-    return x * x
-
-print('Number square= ' + str(new_square(x)))
+print(f(4.5))
+print(f(-4.5))
+print(f(1))
